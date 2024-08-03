@@ -1,0 +1,180 @@
+[LastProfile]
+LPNum=2
+
+[Profile 0]
+Name=TGIF-G
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMRG
+Address=127.0.0.1
+Port=62032
+Password=PWFILE
+TalkGroup=31665
+StartupDstId=0
+
+[Profile 1]
+Name=Default-TGIF 31665
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMR
+Address=tgif.network
+Port=62031
+Password=PWFILE
+TalkGroup=31665
+StartupDstId=0
+
+[Profile 2]
+Name=TGIF-G
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMRG
+Address=127.0.0.1
+Port=62032
+Password=Passw0rd
+TalkGroup=31665
+StartupDstId=0
+
+
+[Profile 3]
+Name=MNET
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMR
+Address=mnet.hopto.org
+Port=62032
+Password=Passw0rd
+TalkGroup=10210
+StartupDstId=0
+
+
+[Profile 4]
+Name=MNET-G
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMRG
+Address=mnet.hopto.org
+Port=62032
+Password=Passw0rd
+TalkGroup=10210
+StartupDstId=0
+
+
+[Profile 5]
+Name=YSF AmericaLink
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=302073304
+Mode=YSF
+Address=63.250.41.136
+Port=42000
+Password=passw0rd
+TalkGroup=32592
+StartupDstId=0
+
+#32592;US-America-Link;AmericaLink;63.250.41.136;42000;823
+
+[Profile 6]
+Name=P25 MNET 10210
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=YSF2P25
+Address=mnet.hopto.org
+Port=41000
+Local=62037
+Password=PWFILE
+TalkGroup=10210
+StartupDstId=0
+
+
+[Profile 7]
+Name=NXDN TGIF
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=302073304
+Mode=DMR2NXDN
+Address=tgif.network
+Port=41000
+Password=passw0rd
+TalkGroup=31665
+StartupDstId=0
+
+
+[Profile 8]
+Name=NXDN
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=302073304
+Mode=DMR2NXDN-G
+Address=tgif.network
+Port=41000
+Password=passw0rd
+TalkGroup=TGIF
+StartupDstId=0
+
+
+[Profile 9]
+Name=NXDN TGIF
+RXOffset=-225
+TXOffset=-225
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RDD
+Id=302073334
+Mode=YSF2NXDN
+Address=tgif.network
+Port=41000
+Password=password
+TalkGroup=31499
+StartupDstId=0
+
+
+[Profile 10]
+Name=Default-TGIF 31665
+RXOffset=-250
+TXOffset=-250
+RXFrequency=434900000
+TXFrequency=434900000
+Callsign=VE3RD
+Id=3023954
+Mode=DMRG
+Address=tgif.network
+Port=62031
+Password=PWFILE
+TalkGroup=31665
+StartupDstId=0
+
+
+
