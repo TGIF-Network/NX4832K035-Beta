@@ -11,7 +11,7 @@ sudo mount -o remount,rw /
 
 f1=$(ls -tr /var/log/pi-star/MMDVM* | tail -1 )
 #list1=$(sudo sed -n '/received network end of voice transmission from/p' $f1 | sed 's/,//g' | tail -1)
-list1=$(sudo sed -n '/received network end of voice transmission from/p' $f1 | tail -2 | head -1)
+list1=$(sudo sed -n '/received network end of voice transmission from/p' $f1 | tail -1)
 #echo "$list1"
 #exit
 
