@@ -19,4 +19,4 @@ pl=$(echo "$list1" | cut -d " " -f20)
 dur=$(echo "$list1" | cut -d " " -f18)
 
 echo "$dur|$pl"
-sudo mount -o remount,ro /
+#sudo mount -o remount,ro /
