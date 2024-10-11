@@ -17,6 +17,6 @@ list1=$(sudo sed -n '/received network end of voice transmission from/p' $f1 | t
 
 pl=$(echo "$list1" | cut -d " " -f20)
 dur=$(echo "$list1" | cut -d " " -f18)
-
-echo "$dur|$pl"
+tm=$(date +'%T')
+echo "$dur|$pl|$tm"
 #sudo mount -o remount,ro /
