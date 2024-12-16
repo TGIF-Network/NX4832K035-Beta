@@ -31,6 +31,9 @@ p10=${10}
 
 	sudo sed -i '/^\[/h;G;/NXDN/s/\(ModeHang=\).*/\1'"$9"'/m;P;d' /etc/mmdvmhost
 	sudo sed -i '/^\[/h;G;/NXDN Network/s/\(ModeHang=\).*/\1'"$p10"'/m;P;d' /etc/mmdvmhost
+
+	sudo sed -i '/^\[/h;G;/M17/s/\(ModeHang=\).*/\1'"$9"'/m;P;d' /etc/mmdvmhost
+	sudo sed -i '/^\[/h;G;/M17 Network/s/\(ModeHang=\).*/\1'"$p10"'/m;P;d' /etc/mmdvmhost
 echo "$p10"
 fi;
 sudo /usr/local/sbin/mmdvmhost.service start  > /dev/null

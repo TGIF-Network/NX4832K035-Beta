@@ -34,26 +34,32 @@ sudo mount -o remount,rw /
 
         if [ "$4" = "0" ]; then 
 		sudo sed -i '/\[P25\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
-                              sudo sed -i '/\[P25 Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
+                sudo sed -i '/\[P25 Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
         fi
 
         if [ "$5" = "0" ]; then 
 		sudo sed -i '/\[NXDN\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
-                              sudo sed -i '/\[NXDN Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
+            	sudo sed -i '/\[NXDN Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
         fi
 
         if [ "$6" = "0" ]; then 
 		sudo sed -i '/\[POCSAG\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
-                              sudo sed -i '/\[POCSAG Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
+                sudo sed -i '/\[POCSAG Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
         fi
+
+        if [ "$7" = "0" ]; then 
+		sudo sed -i '/\[M17\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
+                sudo sed -i '/\[M17 Network\]/!b;n;cEnable='"0"'' /etc/mmdvmhost
+        fi
+
         if [ "$1" = "1" ]; then 
 		sudo sed -i '/\[D-Star\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
-                              sudo sed -i '/\[D-Star Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[D-Star Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
         fi
 
         if [ "$2" = "1" ]; then 
 		sudo sed -i '/\[DMR\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
-                              sudo sed -i '/\[DMR Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[DMR Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
         fi
 
         if [ "$3" = "1" ]; then 
@@ -66,17 +72,21 @@ sudo mount -o remount,rw /
 
         if [ "$4" = "1" ]; then 
 		sudo sed -i '/\[P25\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
-                              sudo sed -i '/\[P25 Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[P25 Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
         fi
 
         if [ "$5" = "1" ]; then 
 		sudo sed -i '/\[NXDN\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
-                              sudo sed -i '/\[NXDN Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[NXDN Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
         fi
 
         if [ "$6" = "1" ]; then 
 		sudo sed -i '/\[POCSAG\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
-                              sudo sed -i '/\[POCSAG Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[POCSAG Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+        fi
+        if [ "$7" = "1" ]; then 
+		sudo sed -i '/\[M17\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
+                sudo sed -i '/\[M17 Network\]/!b;n;cEnable='"1"'' /etc/mmdvmhost
         fi
  sudo mmdvmhost.service restart
 sudo mount -o remount,ro /
